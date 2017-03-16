@@ -14,32 +14,7 @@ hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 
 
-// Double jump (or number of jumps you want)
-if (place_meeting (x,y+1, obj_wall))
-{
-	jumps = jumpsmax;
-}
-
-else
-{
-	if (jumps == jumpsmax) jumps -=1;
-}
-
-if (key_jump) && (jumps > 0) 
-{
-	jumps -= 1;
-	vsp = -jumpspeed;
-}
-
-// Variable jump height
-if (vsp < 0) && (!key_jump_held) vsp = max(vsp,-jumpspeed/4);
-
-// Wall jump
-
-if (key_jump) && (place_meeting(x+1, y, obj_wall) || place_meeting(x-1,y,obj_wall))
-{
-	vsp =-jumpspeed;
-}
+scr_playerJump();
 
 
 var hsp_final = hsp + hsp_carry;
@@ -84,8 +59,8 @@ if (ladder)
 	vsp = 0;
 	grav = 0;
 	//hsp = 0;
-	if (key_up) vsp = -2;
-	if (key_down) vsp = 2;
+	if (key_up) vsp = -4;
+	if (key_down) vsp = 4;
 	if !place_meeting(x,y+5,obj_ladder) ladder = false;
 	if (key_jump) ladder = false;
 }
