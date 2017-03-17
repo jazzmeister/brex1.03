@@ -77,12 +77,11 @@ if place_meeting(x,y-16,obj_water)
 {
 	if (key_up) vsp = -2;
 	if (key_down) vsp =2;
-	if (key_right) hsp = move*watermovespeed;
-	if (key_left) hsp = move*watermovespeed;
-	//if (key_jump) vsp = -5;
+
 }
 else
 {
+	// return movespeed back to normal when out of water
 	movespeed = 7;
 }
 
