@@ -8,8 +8,10 @@ key_up = keyboard_check (vk_up);
 key_down = keyboard_check(vk_down);
 
 // React to inputs
+
+finalmovespeed = movespeed;
 move = key_left + key_right;
-hsp = move * movespeed;
+hsp = move * finalmovespeed;
 
 if (vsp < 10) vsp += grav;
 
@@ -70,6 +72,18 @@ if !(ladder)
 	grav = 0.5;
 }
 
-
+// water
+if place_meeting(x,y-16,obj_water) 
+{
+	if (key_up) vsp = -2;
+	if (key_down) vsp =2;
+	if (key_right) hsp = move*watermovespeed;
+	if (key_left) hsp = move*watermovespeed;
+	//if (key_jump) vsp = -5;
+}
+else
+{
+	movespeed = 7;
+}
 
 }

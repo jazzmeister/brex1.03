@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "15364d10-8da9-4b76-84f6-2a3ff796dcc5",
+            "Value": {
+                "id": "9279073b-8a46-4a38-83f4-0f87c5879cfa",
+                "resourcePath": "scripts\\numeric_springing\\numeric_springing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1fb3b829-08fb-4f02-b100-aea9fa6c7b56",
             "Value": {
                 "id": "2ea994e4-bd2b-4490-99c9-82a6a5aa2cf7",
@@ -191,11 +199,27 @@
             }
         },
         {
+            "Key": "608cc558-8b5c-4ecc-8233-ec0f553b87b0",
+            "Value": {
+                "id": "bb35bc14-da0f-48a6-a07f-1d6b3c9dacef",
+                "resourcePath": "sprites\\spr_water\\spr_water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6792c02c-f06d-4302-a77d-d5e8a9d871bd",
             "Value": {
                 "id": "2defd4f1-1fa5-4940-ab7c-ffe99fc22efa",
                 "resourcePath": "views\\6792c02c-f06d-4302-a77d-d5e8a9d871bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "69adc305-7a18-444b-95fd-06c98b0850a9",
+            "Value": {
+                "id": "62147934-121f-4305-a7d7-0e13d5df6583",
+                "resourcePath": "objects\\obj_water\\obj_water.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -259,6 +283,14 @@
             "Value": {
                 "id": "9a59818e-91be-4e34-af5a-2bcfa8ce1958",
                 "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "97e72a7b-9470-4c1a-842b-e586216eec67",
+            "Value": {
+                "id": "c8692940-eba9-47c6-a53a-a3538f8f6339",
+                "resourcePath": "sprites\\mask_water\\mask_water.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -351,6 +383,14 @@
             }
         },
         {
+            "Key": "d4cc79e6-9f1c-4d85-a181-04205c0d8fdd",
+            "Value": {
+                "id": "f3815aa0-fe23-4326-81ba-0cffbd830026",
+                "resourcePath": "scripts\\array_smooth_1d\\array_smooth_1d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "db2cf864-3343-44b4-8473-981d6f16927d",
             "Value": {
                 "id": "61db6984-b88e-4686-9923-79647a472c95",
@@ -433,7 +473,9 @@
     ],
     "script_order": [
         "c88debff-736f-4756-8dc1-15b8d70f106d",
-        "116823e1-fb95-4bb2-b73f-a4df8c4317b0"
+        "116823e1-fb95-4bb2-b73f-a4df8c4317b0",
+        "15364d10-8da9-4b76-84f6-2a3ff796dcc5",
+        "d4cc79e6-9f1c-4d85-a181-04205c0d8fdd"
     ],
     "tutorial": ""
 }
