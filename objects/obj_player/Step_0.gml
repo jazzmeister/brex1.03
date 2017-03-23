@@ -9,11 +9,17 @@ key_down = keyboard_check(vk_down);
 
 // React to inputs
 
+
+
 finalmovespeed = movespeed;
 move = key_left + key_right;
 hsp = move * finalmovespeed;
 
+
+
+
 if (vsp < 10) vsp += grav;
+
 
 
 scr_playerJump();
@@ -33,6 +39,8 @@ if (place_meeting(x+hsp_final, y,obj_wall))
 	}
 	hsp_final = 0;
 	hsp = 0;
+	
+	
 }
 
 x += hsp_final;
@@ -77,11 +85,12 @@ if place_meeting(x,y-16,obj_water)
 {
 	if (key_up) vsp = -2;
 	if (key_down) vsp =2;
-
+	if (key_right) hsp = move*watermovespeed;
+	if (key_left) hsp = move*watermovespeed;
+	//if (key_jump) vsp = -5;
 }
 else
 {
-	// return movespeed back to normal when out of water
 	movespeed = 7;
 }
 

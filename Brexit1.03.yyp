@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "484e3d24-011b-4bae-a567-2c99dde25f8c",
+            "Value": {
+                "id": "d75c12b2-94c0-4a70-ae91-082410b06265",
+                "resourcePath": "sprites\\spr_london\\spr_london.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4b178b65-e14a-45b0-aa1e-f148ad77187c",
             "Value": {
                 "id": "f2dbc7df-1355-4345-83ac-23aaba413bd2",
@@ -396,6 +404,14 @@
                 "id": "61db6984-b88e-4686-9923-79647a472c95",
                 "resourcePath": "views\\db2cf864-3343-44b4-8473-981d6f16927d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ddd4b6ba-0edc-49b6-b2fd-32ea64b97467",
+            "Value": {
+                "id": "6019b15a-e473-4810-b859-da1e8e6d2f95",
+                "resourcePath": "tilesets\\tileset_0\\tileset_0.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
