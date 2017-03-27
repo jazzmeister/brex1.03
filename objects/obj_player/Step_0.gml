@@ -9,21 +9,40 @@ key_down = keyboard_check(vk_down);
 
 // React to inputs
 
-
-
 finalmovespeed = movespeed;
 move = key_left + key_right;
 hsp = move * finalmovespeed;
 
-
-
-
 if (vsp < 10) vsp += grav;
-
 
 
 scr_playerJump();
 
+
+state = playerState.idle;
+show_debug_message("IDLE");
+
+if (key_left == -1)
+{
+	state = playerState.walking;
+	facing = "LEFT";
+	show_debug_message("LEFT");
+}
+
+if (key_right)
+{
+	state = playerState.walking;
+	facing = "RIGHT";
+	show_debug_message("RIGHT");
+}
+if (key_jump)
+{
+	state = playerState.jumping;
+	show_debug_message("JUMP");
+	
+}
+
+ 
 
 var hsp_final = hsp + hsp_carry;
 var vsp_final = vsp + vsp_carry;
@@ -39,8 +58,6 @@ if (place_meeting(x+hsp_final, y,obj_wall))
 	}
 	hsp_final = 0;
 	hsp = 0;
-	
-	
 }
 
 x += hsp_final;
@@ -80,18 +97,18 @@ if !(ladder)
 	grav = 0.5;
 }
 
-// water
+// water - slows the movement of the player when in it
 if place_meeting(x,y-16,obj_water) 
 {
 	if (key_up) vsp = -2;
 	if (key_down) vsp =2;
-	if (key_right) hsp = move*watermovespeed;
-	if (key_left) hsp = move*watermovespeed;
-	//if (key_jump) vsp = -5;
+
 }
 else
 {
+	// return movespeed back to normal when out of water
 	movespeed = 7;
 }
 
 }
+
