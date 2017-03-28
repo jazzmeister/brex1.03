@@ -115,11 +115,3 @@ else
 
 }
 
-if(state == playerState.idle)
-{
-	sprite_index = spr_player_idle;
-	image_index = -1;
-	{
-		image_speed = 0.5;
-	}
-}
