@@ -1,5 +1,5 @@
 {
-    "id": "2621e00f-cab6-47fc-a404-6eed254b896c",
+    "id": "426f039c-479a-413c-aa2a-02161e45c696",
     "modelName": "GMTileSet",
     "mvc": "1.11",
     "name": "ts_london",
@@ -17,7 +17,7 @@
     "out_columns": 41,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
-    "spriteId": "13972350-5856-4e84-8800-bdd96ca14908",
+    "spriteId": "6bc52ec6-028e-4967-ba58-7197d61e7e07",
     "sprite_no_export": true,
     "textureGroup": 0,
     "tile_animation": {
@@ -1713,10 +1713,10 @@
     ],
     "tile_animation_speed": 15,
     "tile_count": 1682,
-    "tileheight": 32,
+    "tileheight": 16,
     "tilehsep": 0,
     "tilevsep": 0,
-    "tilewidth": 32,
+    "tilewidth": 16,
     "tilexoff": 0,
     "tileyoff": 0
 }

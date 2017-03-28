@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "426f039c-479a-413c-aa2a-02161e45c696",
+            "Value": {
+                "id": "3129d984-7e95-4d1f-b53e-7951cf07f9a1",
+                "resourcePath": "tilesets\\ts_london\\ts_london.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "43083e57-2a01-41cd-a085-5ac56690d36f",
             "Value": {
                 "id": "a601a914-11ae-40b4-b344-3b4eb83e71ea",
@@ -247,11 +255,27 @@
             }
         },
         {
+            "Key": "6bc52ec6-028e-4967-ba58-7197d61e7e07",
+            "Value": {
+                "id": "fee0d7fc-75a0-43cc-b718-d6f2554ddb10",
+                "resourcePath": "sprites\\sprite_14\\sprite_14.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6cc2b27c-9643-4aa6-b457-6dfbaad84efc",
             "Value": {
                 "id": "76e207a4-51de-4fcc-9bb0-0eeb0e8e17f8",
                 "resourcePath": "objects\\obJ_enemy_no_fall\\obJ_enemy_no_fall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7c61c089-5218-4889-a4aa-3a25253e7682",
+            "Value": {
+                "id": "29908b81-fff5-40a7-be0c-97f17e87846d",
+                "resourcePath": "rooms\\test\\test.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
