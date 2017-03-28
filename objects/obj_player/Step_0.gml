@@ -13,6 +13,9 @@ finalmovespeed = movespeed;
 move = key_left + key_right;
 hsp = move * finalmovespeed;
 
+
+state = playerState.idle;
+
 if (vsp < 10) vsp += grav;
 
 
@@ -112,3 +115,11 @@ else
 
 }
 
+if(state == playerState.idle)
+{
+	sprite_index = spr_player_idle;
+	image_index = -1;
+	{
+		image_speed = 0.5;
+	}
+}
