@@ -1,9 +1,12 @@
 {
 	/// Get the player's input
 key_right = keyboard_check(vk_right);
+key_right_release = keyboard_check_released(vk_right);
 key_left = -keyboard_check(vk_left);
+key_left_release = keyboard_check_released(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
 key_jump_held = keyboard_check (vk_space);
+key_jump_release = keyboard_check_released(vk_space);
 key_up = keyboard_check (vk_up);
 key_down = keyboard_check(vk_down);
 
@@ -13,39 +16,37 @@ finalmovespeed = movespeed;
 move = key_left + key_right;
 hsp = move * finalmovespeed;
 
-
-state = playerState.idle;
-
 if (vsp < 10) vsp += grav;
 
-
+// run jumping script
 scr_playerJump();
 
 
-state = playerState.idle;
-show_debug_message("IDLE");
 
 if (key_left == -1)
 {
-	state = playerState.walking;
+	if (state != playerState.jumping) state = playerState.walking;
 	facing = "LEFT";
-	show_debug_message("LEFT");
 }
+
 
 if (key_right)
 {
-	state = playerState.walking;
+	if (state != playerState.jumping) state = playerState.walking;
 	facing = "RIGHT";
-	show_debug_message("RIGHT");
-}
-if (key_jump)
-{
-	state = playerState.jumping;
-	show_debug_message("JUMP");
-	
 }
 
- 
+// sets the palyer back to idle state when not moving
+if (key_left_release || key_right_release && state != playerState.jumping)
+{
+	state = playerState.idle;
+}
+
+
+if (key_jump)
+{
+	state = playerState.jumping;	
+}
 
 var hsp_final = hsp + hsp_carry;
 var vsp_final = vsp + vsp_carry;
@@ -75,6 +76,12 @@ if (place_meeting(x, y+vsp_final,obj_wall))
 	}
 	vsp_final = 0;
 	vsp = 0;
+	if (state == playerState.jumping)
+	{
+		state = playerState.idle;
+	}
+	
+	
 }
 y += vsp_final;
 
@@ -96,22 +103,10 @@ if (ladder)
 }
 
 if !(ladder)
-{
-	grav = 0.5;
-}
+	{
+		grav = 0.5;
+	}
 
-// water - slows the movement of the player when in it
-if place_meeting(x,y-16,obj_water) 
-{
-	if (key_up) vsp = -2;
-	if (key_down) vsp =2;
-
-}
-else
-{
-	// return movespeed back to normal when out of water
-	movespeed = 7;
-}
 
 }
 

@@ -8,7 +8,7 @@ image_alpha = .4; //The density/see-thoughness of the water.
 
 glimmer = true; //If you want the top waves to glimmer.
 nodes = ceil((sprite_width)/4); //More nodes = more realistic, but also slower.
-smoothness = 3; //How much to smooth out the waves.
+smoothness = 8; //How much to smooth out the waves.
 disturbance = 1; //How disturbed the water should be.
 wave_max = sprite_height; //The maximum wave height and depth.
 solids = obj_wall; //Set to -1 if you have no solid objects (preferably a parent).
