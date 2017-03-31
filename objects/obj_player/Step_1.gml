@@ -3,6 +3,7 @@
 
 if instance_position(x,y-16,obj_water) 
 	{
+		state = playerState.swimming;
 		movespeed = 2;
 		if (key_up) vsp = -2;
 		if (key_down) vsp = 2;

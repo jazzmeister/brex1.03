@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0962b246-2b0e-4aab-ba00-112b1c18d471",
+            "Value": {
+                "id": "1dc49e81-056b-488c-852a-e68aedda59db",
+                "resourcePath": "sprites\\spr_city_distant\\spr_city_distant.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0b5245e6-8355-47e5-8465-f7590a18f67f",
             "Value": {
                 "id": "a7cbff3b-5707-4b68-8527-3367c4d992b6",
@@ -115,6 +123,14 @@
             "Value": {
                 "id": "b06ebb75-9c21-425d-8865-6667b51bfc0e",
                 "resourcePath": "sprites\\spr_london_tiles\\spr_london_tiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "14039dcc-1926-4dbc-a0a8-260ca53c81cf",
+            "Value": {
+                "id": "ab2d5d67-f80a-493f-a551-23ea1f5a1123",
+                "resourcePath": "sprites\\spr_city_close\\spr_city_close.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -239,11 +255,27 @@
             }
         },
         {
+            "Key": "4699e7a7-6ef3-4b78-b650-e8df844c1e65",
+            "Value": {
+                "id": "3313da92-908c-473f-8470-4fd1179d8ac4",
+                "resourcePath": "sprites\\spr_player_swim_right\\spr_player_swim_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "47b66150-d00d-4ceb-94cd-807e02c9c29c",
             "Value": {
                 "id": "64df9054-d8b7-48e7-beda-d00b6770b05a",
                 "resourcePath": "views\\47b66150-d00d-4ceb-94cd-807e02c9c29c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "49d29e59-a56d-404e-a0f8-e10fb3b2ddbd",
+            "Value": {
+                "id": "22b654e3-5400-4290-8300-aab08c1c129e",
+                "resourcePath": "sprites\\spr_player_swim_left\\spr_player_swim_left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -707,6 +739,14 @@
             "Value": {
                 "id": "bbfd8d15-a974-4fe7-a894-7ac2b7a94dee",
                 "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f2e0790c-9332-427f-955b-f3cbff42c985",
+            "Value": {
+                "id": "436ed542-e855-4e25-80ed-c89266d74c3e",
+                "resourcePath": "sprites\\spr_distant_city2\\spr_distant_city2.yy",
                 "resourceType": "GMSprite"
             }
         },

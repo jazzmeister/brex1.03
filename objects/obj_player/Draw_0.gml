@@ -28,6 +28,11 @@ if(facing == "LEFT")
 	{
 		draw_sprite(spr_player_jump_left, -1,xpos,ypos);
 	}
+	
+	if (state == playerState.swimming)
+	{
+		draw_sprite(spr_player_swim_left, -1,xpos,ypos);
+	}
 }
 
 
@@ -47,6 +52,11 @@ if(facing == "RIGHT")
 	if (state == playerState.jumping)
 	{
 		draw_sprite(spr_player_jump_right, -1,xpos,ypos);
+	}
+	
+	if (state == playerState.swimming)
+	{
+		draw_sprite(spr_player_swim_right, -1,xpos,ypos);
 	}
 }
 
