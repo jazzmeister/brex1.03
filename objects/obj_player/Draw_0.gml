@@ -58,6 +58,11 @@ if(facing == "RIGHT")
 	{
 		draw_sprite(spr_player_swim_right, -1,xpos,ypos);
 	}
+	
+	if (state == playerState.falling)
+	{
+		draw_sprite(spr_player_falling_right, -1, xpos, ypos);
+	}
 }
 
 

@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "b4a306b8-5f2f-4b3a-884a-3f1882d45d0c",
+            "Value": {
+                "id": "cb3ba36e-e31d-4eb0-8312-666d4a376f84",
+                "resourcePath": "sprites\\spr_player_falling_right\\spr_player_falling_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b6e9b676-6149-4a31-8677-c2cb13c9a4b0",
             "Value": {
                 "id": "241dd427-1c00-4641-a95b-1081eea2e25f",

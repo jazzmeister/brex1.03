@@ -25,15 +25,32 @@ scr_playerJump();
 
 if (key_left == -1)
 {
-	if (state != playerState.jumping) state = playerState.walking;
+	if (state != playerState.jumping && state != playerState.falling) 
+	{
+		if (state != playerState.swimming) 
+			{
+				state = playerState.walking;
+			}	
 	facing = "LEFT";
+	}
 }
 
 
 if (key_right)
 {
-	if (state != playerState.jumping) state = playerState.walking;
+	if (state != playerState.jumping && state != playerState.falling) 
+	{
+		if (state != playerState.swimming) 
+		{
+			state = playerState.walking;
+		}
 	facing = "RIGHT";
+	}
+}
+
+if (vsp > 1)
+{
+	state = playerState.falling;
 }
 
 // sets the palyer back to idle state when not moving
@@ -76,7 +93,7 @@ if (place_meeting(x, y+vsp_final,obj_wall))
 	}
 	vsp_final = 0;
 	vsp = 0;
-	if (state == playerState.jumping)
+	if (state == playerState.falling)
 	{
 		state = playerState.idle;
 	}
