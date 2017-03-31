@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "1db1c2bb-8e2c-40f3-b842-d225ebf07919",
+            "Value": {
+                "id": "c16aed7c-f476-4959-9897-f36e454083e3",
+                "resourcePath": "sprites\\spr_player_falling_left\\spr_player_falling_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1fb3b829-08fb-4f02-b100-aea9fa6c7b56",
             "Value": {
                 "id": "2ea994e4-bd2b-4490-99c9-82a6a5aa2cf7",

@@ -48,7 +48,7 @@ if (key_right)
 	}
 }
 
-if (vsp > 1)
+if (vsp > 1 && state != playerState.swimming)
 {
 	state = playerState.falling;
 }
