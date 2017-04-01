@@ -1,4 +1,3 @@
-
 // water - slows the movement of the player when in it
 
 if instance_position(x,y-16,obj_water) 
@@ -9,13 +8,4 @@ if instance_position(x,y-16,obj_water)
 		if (key_down) vsp = 2;
 		//vsp = vsp-0.525;
 		grav = -0.6;
-	}
-	else
-	{
-		// return movespeed back to normal when out of water
-		movespeed = 7;
-		if (state == playerState.swimming)
-		{
-			state = playerState.jumping;
-		}
 	}

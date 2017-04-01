@@ -31,8 +31,9 @@ if (key_left == -1)
 			{
 				state = playerState.walking;
 			}	
-	facing = "LEFT";
+	
 	}
+	facing = "LEFT";
 }
 
 
@@ -44,8 +45,9 @@ if (key_right)
 		{
 			state = playerState.walking;
 		}
-	facing = "RIGHT";
+	
 	}
+	facing = "RIGHT";
 }
 
 if (vsp > 1 && state != playerState.swimming)
@@ -60,10 +62,15 @@ if (key_left_release || key_right_release && state != playerState.jumping)
 }
 
 
-if (key_jump)
+if (key_jump && !key_down)
 {
 	state = playerState.jumping;	
 }
+
+
+
+
+
 
 var hsp_final = hsp + hsp_carry;
 var vsp_final = vsp + vsp_carry;
