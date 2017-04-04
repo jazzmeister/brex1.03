@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "7b9990b7-a8b8-4a17-bbbe-11b5a3290cde",
+            "Value": {
+                "id": "de5c7592-abc2-4833-8556-86c8cc221bba",
+                "resourcePath": "scripts\\scr_apply_friction\\scr_apply_friction.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7c61c089-5218-4889-a4aa-3a25253e7682",
             "Value": {
                 "id": "29908b81-fff5-40a7-be0c-97f17e87846d",
@@ -835,6 +843,7 @@
         "c88debff-736f-4756-8dc1-15b8d70f106d",
         "116823e1-fb95-4bb2-b73f-a4df8c4317b0",
         "15364d10-8da9-4b76-84f6-2a3ff796dcc5",
+        "7b9990b7-a8b8-4a17-bbbe-11b5a3290cde",
         "d4cc79e6-9f1c-4d85-a181-04205c0d8fdd"
     ],
     "tutorial": ""

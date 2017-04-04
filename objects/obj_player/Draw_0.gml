@@ -4,7 +4,7 @@ ypos = y + 0;
 if(state == playerState.idle)
 {
 	draw_self();
-	mask_index = spr_player_idle;
+	//mask_index = spr_player_idle;
 	image_index = -1;
 	{
 		image_speed = 0.5;
@@ -22,25 +22,25 @@ if(facing == "LEFT")
 	if(state == playerState.walking)
 	{
 		image_speed = 0.2;
-		mask_index = spr_player_walk_left;
+		//mask_index = spr_player_walk_left;
 		draw_sprite(spr_player_walk_left, -1,xpos,ypos);
 	}
 	
 	if (state == playerState.jumping)
 	{
-		mask_index = spr_player_jump_left;
+		//mask_index = spr_player_jump_left;
 		draw_sprite(spr_player_jump_left, -1,xpos,ypos);
 	}
 	
 	if (state == playerState.swimming)
 	{
-		mask_index = spr_player_swim_left;
+		//mask_index = spr_player_swim_left;
 		draw_sprite(spr_player_swim_left, -1,xpos,ypos);
 	}
 	
 	if (state == playerState.falling)
 	{
-		mask_index = spr_player_falling_left;
+		//mask_index = spr_player_falling_left;
 		draw_sprite(spr_player_falling_left, -1, xpos, ypos);
 	}
 }
@@ -56,25 +56,25 @@ if(facing == "RIGHT")
 	if(state == playerState.walking)
 	{
 		image_speed = 0.2;
-		mask_index = spr_player_walk_right;
+		//mask_index = spr_player_walk_right;
 		draw_sprite(spr_player_walk_right, -1,xpos,ypos);
 	}
 	
 	if (state == playerState.jumping)
 	{
-		mask_index = spr_player_jump_right;
+		//mask_index = spr_player_jump_right;
 		draw_sprite(spr_player_jump_right, -1,xpos,ypos);
 	}
 	
 	if (state == playerState.swimming)
 	{
-		mask_index = spr_player_swim_right;
+		//mask_index = spr_player_swim_right;
 		draw_sprite(spr_player_swim_right, -1,xpos,ypos);	
 	}
 	
 	if (state == playerState.falling)
 	{
-		mask_index = spr_player_falling_right;
+		//mask_index = spr_player_falling_right;
 		draw_sprite(spr_player_falling_right, -1, xpos, ypos);
 	}
 }

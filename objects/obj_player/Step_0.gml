@@ -12,14 +12,29 @@ key_down = keyboard_check(vk_down);
 
 // React to inputs
 
-finalmovespeed = movespeed;
-move = key_left + key_right;
-hsp = move * finalmovespeed;
+
+move =  key_right + key_left;
+
 
 if (vsp < 10) vsp += grav;
 
 // run jumping script
 scr_playerJump();
+
+
+// handles player movement and acceleration
+if (key_right || key_left == -1)
+{
+	hsp += (move)*acc;
+	 if (hsp > movespeed) hsp = movespeed;
+	 if (hsp < -movespeed) hsp = -movespeed;
+	 
+}
+else
+{
+	// calls the script to apply friction that slows player down gradually
+	scr_apply_friction(acc);
+}
 
 
 
@@ -34,6 +49,7 @@ if (key_left == -1)
 	
 	}
 	facing = "LEFT";
+	
 }
 
 
@@ -50,26 +66,22 @@ if (key_right)
 	facing = "RIGHT";
 }
 
+
 if (vsp > 1 && state != playerState.swimming)
 {
 	state = playerState.falling;
 }
 
-// sets the palyer back to idle state when not moving
+// sets the player back to idle state when not moving
 if (key_left_release || key_right_release && state != playerState.jumping)
 {
 	state = playerState.idle;
 }
 
-
 if (key_jump && !key_down)
 {
 	state = playerState.jumping;	
 }
-
-
-
-
 
 
 var hsp_final = hsp + hsp_carry;
@@ -87,8 +99,11 @@ if (place_meeting(x+hsp_final, y,obj_wall))
 	hsp_final = 0;
 	hsp = 0;
 }
-
 x += hsp_final;
+
+acceleration = hsp
+show_debug_message(hsp);
+//if (hsp_final > movespeed) hsp_final = movespeed;
 
 
 // Vertical collision
